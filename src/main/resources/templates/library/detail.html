@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html xmlns:th="http://www.thymeleaf.org"
+      class="ios device-pixel-ratio-2 device-retina device-ios device-ios-11 device-ios-11-0 device-ios-gt-10 device-ios-gt-9 device-ios-gt-8 device-ios-gt-7 device-ios-gt-6 support-position-sticky">
+<head>
+    <meta charset="utf-8">
+    <title>页面</title>
+    <div th:replace="commons/mycss::html"></div>
+    <style>
+        .notice_ span{
+            font-size: 14pt !important;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="app" class="framework7-root">
+    <div class="view view-main">
+        <div class="page">
+            <!--<div class="navbar">-->
+                <!--<div class="navbar-inner">-->
+                    <!--<div class="left">-->
+                        <!--<a href="#" class="link back">-->
+                            <!--<i class="icon icon-back" style=""></i>-->
+                            <!--<span class="ios-only">返回</span>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="title" style="left: 0px;">深入学习贯彻党的第十九次全国代表大会精神</div>-->
+                    <!--<div class="right"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="page-content">
+                <div class="card">
+                    <div id="" class="card-content card-content-padding"
+                         th:utext="${content}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:replace="commons/myjs::html"></div>
+<script>
+
+</script>
+</body>
+</html>
